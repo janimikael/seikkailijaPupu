@@ -1236,7 +1236,7 @@ function loop(){
     updateCarrotPosition();
     updateObstaclePosition();
     checkCollision();
-    if (distance >= 10) {
+    if (distance >= 300) {
       fieldGameWin.className = "show"; 
       wait(6000)
     }

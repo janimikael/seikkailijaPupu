@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Slicing Design Subcribe Modal</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <img
+      src="../img/question.jpg"
+      alt="image">
+    <div class="container-text" style="vertical-align: top">
+      <h4>Olet löytänyt lahjapiilon!</h4>
+      <p>Viimeinen turvamuuri on ratkaista tämä pulma mitä ketut eivät osaa.</p>
+      <p>Pesäpallomaila ja pallo maksavat yhteensä 1.10€, ja maila maksaa euron enemmän.</p>
+      <p>Kuinka paljon pallo maksaa? </p>
+      <p>(Vastaa sentteinä)</p>
+      <br/>
+      <input type="number" placeholder="vastaus sentteinä" id="vastaus" onkeyup="checkform()">
+      <br/><br/>
+      <button type="submit" onclick="location.href='https://www.vikingline.fi/valitse-matka/risteilyt/helsinki-tallinna/paivaristeily/paivaristeily-tallinnaan/'" id="nappi">🎁   AVAA LAHJA  🎁</button>
+    </div>
+  </div>
+<!-- partial -->
+</body>
+
+<script>
+  
+  function checkform() {
+    var nameValue = document.getElementById("vastaus").value;
+    if (nameValue === "5") {
+      document.getElementById("nappi").style.display='inline'
+    }
+
+  };
+
+</script>
+</html>

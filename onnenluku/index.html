@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Slicing Design Subcribe Modal</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <img
+      src="../img/sima.jpg"
+      alt="image">
+    <div class="container-text" style="vertical-align: top">
+      <h2>Vastaa arvoitukseen</h2>
+      <p>vastaa alle jänön onnenluku, niin nappi paljastuu</p>
+      <br/>
+      <input type="number" placeholder="Jänön onnenluku" id="vastaus" onkeyup="checkform()">
+      <br/><br/>
+      <button type="submit" onclick="location.href='../numerokortti/index.html'" id="nappi">JIPII! JATKA MATKAA</button>
+    </div>
+  </div>
+<!-- partial -->
+  
+</body>
+
+<script>
+  
+  function checkform() {
+    var nameValue = document.getElementById("vastaus").value;
+    if (nameValue === "105") {
+      document.getElementById("nappi").style.display='inline'
+    }
+
+  };
+
+</script>
+</html>
